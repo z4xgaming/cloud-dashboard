@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f172a; color: #e2e8f0;
+  margin: 0; padding: 20px;
+}
+.container { max-width: 720px; margin: auto; }
+h1 { text-align: center; }
+input, button {
+  padding: 10px 12px; border-radius: 8px; border: 1px solid #334155;
+  background: #1e293b; color: #e2e8f0; font-size: 14px;
+}
+button { background: #3b82f6; border: none; cursor: pointer; }
+button:hover { background: #2563eb; }
+.row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+.row.between { justify-content: space-between; align-items: center; }
+#auth-box, #app-box {
+  background: #1e293b; padding: 16px; border-radius: 12px; margin-top: 16px;
+}
+.hidden { display: none; }
+#notes { list-style: none; padding: 0; }
+#notes li {
+  background: #0f172a; padding: 12px; margin: 8px 0;
+  border-radius: 8px; display: flex; justify-content: space-between;
+}
+#notes li button { background: #ef4444; padding: 6px 10px; font-size: 12px; }
+#auth-msg { color: #f87171; font-size: 13px; }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Cloud Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ My Cloud Dashboard</h1>
+
+    <section id="auth-box">
+      <input id="username" placeholder="username" />
+      <input id="email" placeholder="email (register only)" />
+      <input id="password" type="password" placeholder="password" />
+      <div class="row">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+      </div>
+      <p id="auth-msg"></p>
+    </section>
+
+    <section id="app-box" class="hidden">
+      <div class="row between">
+        <span id="who"></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+      <div class="row">
+        <input id="note-title" placeholder="Title" />
+        <input id="note-content" placeholder="Content" />
+        <button onclick="addNote()">Add Note</button>
+      </div>
+      <ul id="notes"></ul>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
